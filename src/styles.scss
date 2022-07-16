@@ -7,6 +7,7 @@ body {
     width: 100%;
     min-height: 100vh;
 }
+
 .cardContainer {
     // background: white;
     // margin-top: 15%;
@@ -22,6 +23,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
 }
+
 .cardContainerItem {
     background: white;
     margin-top: 10%;
@@ -109,10 +111,12 @@ body {
         margin-top: 15%;
         margin-left: auto;
         margin-right: auto;
+
         h2,
         p {
             font-size: 30px;
             font-weight: 600;
+            text-align: center;
         }
     }
 
@@ -144,3 +148,57 @@ body {
         }
     }
 }
+
+
+@media only screen and (max-width: 480px) {
+
+    .containerOutlet {
+        width: 250px !important;
+    }
+
+    .cardContainer {
+        width: 90%;
+        padding: 25px;
+        margin-top: 42%;
+        height: 184px;
+    }
+    .itemStyling {
+        width: 40% !important;
+        margin-top: 33% !important;
+    }
+
+    .itemsdetailsContainer .itemStyling h2,
+    .itemsdetailsContainer .itemStyling p {
+        font-size: 16px;
+        // font-weight: 600;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width:480px) and (max-width:768px) {
+    .containerOutlet {
+        width: 408px !important;
+    }
+
+    .cardContainer {
+        width: 90%;
+        padding: 18px;
+        margin-top: 38%;
+        height: 210px;
+    }
+
+    .itemStyling {
+        width: 50% !important;
+        margin-top: 33% !important;
+    }
+
+    .itemsdetailsContainer .itemStyling h2,
+    .itemsdetailsContainer .itemStyling p {
+        font-size: 20px;
+        // font-weight: 600;
+        text-align: center;
+    }
+}
+
+
